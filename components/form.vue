@@ -3,26 +3,26 @@
       <form @submit.prevent v-on:submit="sendData">
       <label class="block mt-4">
   <span>Name</span>
-  <input type="name" id="name" class="form-input block mt-1 w-full  border-black border-2" v-model="name" placeholder="Robin Rieger">
+  <input type="name" id="orderName" class="form-input block mt-1 w-full  border-black border-2" v-model="name" placeholder="Robin Rieger" required>
 </label>
 <label class="block mt-4">
   <span>Textarea</span>
-  <textarea id="order" class="form-textarea block mt-1 w-full border-black border-2" rows="3" v-model="content" placeholder="Enter some long form content."></textarea>
+  <textarea id="orderContent" class="form-textarea block mt-1 w-full border-black border-2" rows="3" v-model="content" placeholder="Enter some long form content."></textarea>
 </label>
       <label class="block mt-4">
   <span>Preis</span>
-  <input type="Price" id="price" class="form-input mt-1 block w-full  border-black border-2" placeholder="14,99€" v-model="price">
+  <input type="Price" id="orderPrice" class="form-input mt-1 block w-full  border-black border-2" placeholder="14,99€" v-model="price">
     </label>
       <label class="inline-flex items-center mt-4 w-full">
-        <input type="checkbox" id="payed" class="form-checkbox h-8 w-8 text-indigo-600  border-2 border-black" v-model="payed">
+        <input id="orderPayed" type="checkbox" class="form-checkbox h-8 w-8 text-indigo-600  border-2 border-black" v-model="payed">
         <span class="ml-4">bezahlt?</span>
       </label>
       <label class="inline-flex items-center mt-4 w-full">
-        <input type="checkbox" id="accompany" class="form-checkbox h-8 w-8 text-indigo-600  border-black border-2" v-model="accompany">
+        <input id="orderAccompany" type="checkbox" class="form-checkbox h-8 w-8 text-indigo-600  border-black border-2" v-model="accompany">
         <span class="ml-4">begleiten?</span>
       </label>
     <label class="inline-flex items-center mt-4">
-        <button class="bg-green-500 border-2 border-black">Absenden</button>
+        <button id="orderButton" class="bg-green-500 border-2 border-black">Absenden</button>
         </label>
         </form>
     </div>

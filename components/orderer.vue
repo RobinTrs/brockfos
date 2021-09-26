@@ -4,14 +4,14 @@
             <div class="grid grid-cols-3 gap-1">
             <label class="block col-span-1">
                 <span> Name </span>
-                <input type="name" class="form-input block mt-1 w-full border-black border-2" v-model="ordererName">
+                <input type="name" id="ordererName" class="form-input block mt-1 w-full border-black border-2" v-model="ordererName" required>
             </label>
             <label class="block col-span-1">
                 <span> Paypal.me Link </span>
-                <input type="name" class="form-input block mt-1 w-full border-black border-2" v-model="ordererPaypal">
+                <input type="name" id="ordererPaypal" class="form-input block mt-1 w-full border-black border-2" v-model="ordererPaypal" required>
             </label>
             <label class="inline-flex items-center col-span-1 pt-10">
-                <button class="bg-blue-500 border-2 border-black">Sei Besteller</button>
+                <button id="ordererButton" class="bg-blue-500 border-2 border-black">Sei Besteller</button>
             </label>
          </div>
             </form>

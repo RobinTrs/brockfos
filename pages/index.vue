@@ -10,8 +10,8 @@
     <div class="text-center mb-12">
       <p>Guten Morgen, was möchtest du heute Essen?</p>
     <div v-for="orderarray in orderarrays" :key="orderarray.ordererName"> 
-      <span class="w-full text-xl"> {{orderarray.ordererName}} wird heute das Essen bestellen</span> <br/>
-      <a :href="orderarray.ordererPaypal" target="_blank"> <span class="w-full text-xl">paypal:</span> </a>
+      <span class="w-full text-xl" id="todaysOrderer"> {{orderarray.ordererName}} wird heute das Essen bestellen</span> <br/>
+      <a :href="orderarray.ordererPaypal" target="_blank" id="todaysPaypal"> <span class="w-full text-xl">Paypal</span> </a>
        </div>
 
     </div>
