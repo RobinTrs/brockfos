@@ -12,7 +12,7 @@ You can visit it with the following URL 'http://localhost:3000/'
 
 ## Test
 
-To run tests you can simply type `npm run tests:e2e` in your Terminal
+To run tests you can simply type `npm run test:e2e` in your Terminal
 
 The script will start the Server and wait for it to return a status-code 200.
 Afterwards it opens the Cypress UI.
